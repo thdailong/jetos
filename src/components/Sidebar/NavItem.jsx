@@ -3,11 +3,12 @@ import classes from "./styles/NavItem.module.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 
-const NavItem = ({ text, Icon, path }) => {
+const NavItem = ({ text, Icon, path, onClickItem }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const onClickNavigate = () => {
     navigate(path);
+    onClickItem && onClickItem();
   };
 
   const isActivePath = () => {

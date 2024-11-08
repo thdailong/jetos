@@ -3,7 +3,6 @@ import DollarCircleIcon from "components/Icons/DollarCircle";
 import MoneyWallet from "components/Icons/MoneyWallet";
 import Wallet3Icon from "components/Icons/Wallet3Icon";
 import React from "react";
-import classes from "./styles/index.module.css";
 import { Col, Row } from "antd";
 import DashboardCard from "components/Card/DashboardCard";
 
@@ -28,7 +27,7 @@ const ITEMS = [
 
 const DashboardPage = () => {
   return (
-    <div className={classes.container}>
+    <div>
       <Row gutter={[16, 16]}>
         {ITEMS.map((item, index) => (
           <Col
@@ -37,6 +36,9 @@ const DashboardPage = () => {
             }}
             sm={{
               span: 12,
+            }}
+            xs={{
+              span: 24,
             }}
             key={index}
           >

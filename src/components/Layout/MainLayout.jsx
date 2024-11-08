@@ -8,12 +8,12 @@ import Header from "components/Header";
 const MainLayout = () => {
   return (
     <Layout className={classes.layout}>
-      <Layout.Sider width={220}>
+      <Layout.Sider width={220} className={classes.sider}>
         <Sidebar />
       </Layout.Sider>
       <Layout>
         <Header />
-        <Layout.Content>
+        <Layout.Content className={classes.content}>
           <Outlet />
         </Layout.Content>
       </Layout>

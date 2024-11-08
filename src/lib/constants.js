@@ -30,7 +30,7 @@ export const NAVIGATES = [
   {
     label: "Personal",
     Icon: UserIcon,
-    path: "/users",
+    path: "/personal",
   },
   {
     label: "Message",
