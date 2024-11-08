@@ -1,0 +1,31 @@
+.layout {
+    padding: 0px 10px;
+    height: 75px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-header {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    flex: 1;
+}
+
+.icon {
+    color: rgba(158, 158, 158, 1);
+    sup {
+        background: rgba(31, 203, 79, 1) !important;
+        border-color: black !important;
+        box-shadow: 0 0 0 1px black !important;
+    }
+}
+
+.avatar {
+    min-width: 35px;
+    min-height: 35px;
+}

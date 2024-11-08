@@ -1,14 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./components/Layout/MainLayout";
+import DashboardPage from "page/Dashboard";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" Component={MainLayout}>
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<DashboardPage />} />
         </Route>
       </Routes>
     </>
@@ -16,15 +15,3 @@ function App() {
 }
 
 export default App;
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}

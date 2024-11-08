@@ -29,6 +29,14 @@ root.render(
             siderBg: "rgba(26, 28, 34, 1)",
             headerBg: "rgba(26, 28, 34, 1)",
           },
+          Input: {
+            colorBgContainer: "rgba(40, 44, 53, 1)",
+            colorBorder: "rgba(40, 44, 53, 1)",
+            hoverBorderColor: "rgba(31, 203, 79, 1)",
+            activeBorderColor: "rgba(31, 203, 79, 1)",
+            colorText: "rgba(158, 158, 158, 1)",
+            colorTextPlaceholder: "rgba(158, 158, 158, 1)",
+          },
         },
       }}
     >
