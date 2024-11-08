@@ -4,8 +4,15 @@ import Logo from "assets/img/Logo.svg";
 import { NAVIGATES } from "lib/constants";
 import NavItem from "./NavItem";
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ showLogo = true, onClickItem }) => {
+  const navigate = useNavigate();
+  const onClickLogo = () => {
+    onClickItem && onClickItem();
+    navigate("/");
+  };
+
   return (
     <div
       className={clsx(classes.container, {
@@ -19,6 +26,7 @@ const Sidebar = ({ showLogo = true, onClickItem }) => {
           width={160}
           height={"auto"}
           className={classes.img}
+          onClick={onClickLogo}
         />
       )}
       <div
